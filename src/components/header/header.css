@@ -10,6 +10,23 @@
     font-size: 1.25rem;
     line-height: 1.5rem;
     color: var(--cor-fonte-principal);
+    transition: all .3s;
+
+    &.active {
+        color: #2088ff;
+        font-weight: 800;
+        text-decoration: underline;
+        padding-bottom: 5px;
+    }
+
+    a.transitioning {
+        opacity: 0.5;
+    }
+
+    a.pending {
+        animation: pulse 1s infinite;
+    }
+
 }
 
 @media (max-width: 744px) {

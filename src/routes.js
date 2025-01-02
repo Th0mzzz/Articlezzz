@@ -4,7 +4,7 @@ import AboutMe from "./pages/aboutMe";
 import TemplateHeader from "./components/header";
 
 
-function App() {
+function Router() {
   return (
     <BrowserRouter>
       <TemplateHeader />
@@ -17,4 +17,4 @@ function App() {
   )
 }
 
-export default App;
+export default Router;

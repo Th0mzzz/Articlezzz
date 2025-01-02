@@ -1,5 +1,9 @@
-export default function Index(){
+import Banner from '../../components/Banner'
+export default function Index() {
     return (
-        <h2>Hello World</h2>
+        <>
+            <Banner />
+            <h2>Hello World</h2>
+        </>
     )
 }
