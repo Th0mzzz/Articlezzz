@@ -1,22 +1,29 @@
 .navegacao {
+    background: var(--cor-fundo);
     height: 112px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     column-gap: 3rem;
+    position: fixed;
+    padding: 1rem;
+    z-index: 1000;
+    width: 100%;
+    min-width: 100vw;
+    padding: 1rem 2.5rem ;
+    transition: transform .5s , background .4s;
 }
-
 .link {
     font-size: 1.25rem;
     line-height: 1.5rem;
-    color: var(--cor-fonte-principal);
+    color: var(--cor-txt);
     transition: all .3s;
 
     &.active {
-        color: #2088ff;
+        color: var(--cor-principal);
         font-weight: 800;
-        text-decoration: underline;
-        padding-bottom: 5px;
+        border-bottom: 2px solid var(--cor-principal);
+        padding-bottom: 8px;
     }
 
     a.transitioning {
@@ -28,9 +35,30 @@
     }
 
 }
+.navegacao .menu{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: calc(-100% - 3rem);
+    padding: 2rem 1rem;
+    background: var(--cor-fundo);
+}
 
-@media (max-width: 744px) {
-    .navegacao {
-        height: 72px;
+.navegacao .logotipo{
+    width: clamp(200px, 50vw, 350px);
+}
+
+
+
+@media (min-width: 744px) {
+    .navegacao .menu{
+        position: relative;
+        flex-flow: row nowrap;
+        bottom: auto;
+        padding: 0;
+        width: fit-content;
+        background: transparent;
     }
 }

@@ -1,5 +1,4 @@
 import './banner.css';
-import circuloColorido from 'assets/circulo_colorido.png'
 import minhaFoto from 'assets/minha_foto.jpg'
 export default function Banner() {
     return (
@@ -11,7 +10,6 @@ export default function Banner() {
                 </p>
             </header>
             <div className='imagens'>
-                <img src={circuloColorido} className='circuloColorido' alt='bola colorida' aria-hidden={true}/>
                 <img src={minhaFoto} className='minhaFoto' alt='Minha imagem de perfil'/>
             </div>
         </section>
