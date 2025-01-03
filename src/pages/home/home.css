@@ -1,10 +1,9 @@
 .posts {
-    padding: 0 6vw 3.625rem;
+    padding: 0 6vw 6.25rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin-top: -5rem;
 }
 
 @media (max-width: 1100px) {

@@ -47,6 +47,7 @@
     padding: 1rem;
     background-color: #eaeaea;
     border-radius: 5px;
+    color: var(--cor-fundo-2);
 }
 
 .post-markdown-container pre {

@@ -8,9 +8,10 @@
 :root {
   --cor-principal: #ff3131;
   --cor-secundaria: #ff9393;
-  --cor-container: #fff --cor-fonte-principal: #041833;
+  --cor-container: #fff;
   --cor-fonte-post: #282828;
   --cor-txt: #191a29;
+  --cor-fundo: #F8FAFC;
   --cor-fundo: #F8FAFC;
   --cor-fundo-2: #191a29;
   --fonte-principal: 'Raleway', sans-serif;
@@ -21,8 +22,9 @@
 [data-theme='dark'] {
   --cor-txt: #fff;
   --cor-fundo: #191a29;
+  --cor-fundo-2: #1B1B2F;
   --cor-fonte-post: #FFFAEC;
-
+  --cor-container: #1B1B2F;
 }
 
 #root {
@@ -69,3 +71,28 @@ h3 {
   align-items: center;
 }
 
+.neon-text {
+  animation: Neon infinite 3s;
+}
+
+.strong-text {
+  color: var(--cor-principal);
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 800;
+
+  &:hover {
+    color: var(--cor-secundaria);
+  }
+}
+
+@keyframes Neon {
+
+  0%,
+  100% {
+    filter: none;
+  }
+
+  50% {
+    filter: drop-shadow(0px 0px 5px var(--cor-principal));
+  }
+}

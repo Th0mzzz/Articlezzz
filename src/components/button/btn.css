@@ -19,7 +19,7 @@
 }
 
 .btn:hover {
-   background: var(--cor-secundaria);
+    background: var(--cor-secundaria);
 }
 
 .btn.icon {
@@ -31,7 +31,7 @@
     color: var(--cor-txt);
 
     &:hover {
-        color: var(--cor-secundaria);
+        color: var(--cor-secundaria) !important;
     }
 }
 
@@ -40,4 +40,10 @@
     right: 5%;
     bottom: 5%;
     padding: 1.2rem 1.5rem;
+}
+
+.btn.outline {
+    border: 2px solid var(--cor-principal);
+    background: transparent;
+    font-weight: 800;
 }

@@ -1,4 +1,5 @@
 .navegacao {
+    position: relative;
     background: var(--cor-fundo);
     height: 112px;
     display: flex;
@@ -6,13 +7,13 @@
     align-items: center;
     column-gap: 3rem;
     position: fixed;
-    padding: 1rem;
-    z-index: 1000;
+    z-index: 100;
     width: 100%;
     min-width: 100vw;
-    padding: 1rem 2.5rem ;
-    transition: transform .5s , background .4s;
+    padding: 1rem 2.5rem;
+    transition: transform .5s, background .4s;
 }
+
 .link {
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -35,30 +36,41 @@
     }
 
 }
-.navegacao .menu{
+
+.navegacao .menu {
     display: flex;
     flex-flow: column nowrap;
     gap: 2.5rem;
-    width: 100%;
+    width: 100vw;
     position: absolute;
-    bottom: calc(-100% - 3rem);
+    left: 0;
+    bottom: 100%;
     padding: 2rem 1rem;
     background: var(--cor-fundo);
+    z-index: 100;
+    transition: all .5s;
+    &.show{
+        bottom: calc(-100% - 112px);
+    }
 }
 
-.navegacao .logotipo{
+.navegacao .logotipo {
+    z-index: 101;
     width: clamp(200px, 50vw, 350px);
 }
 
 
 
 @media (min-width: 744px) {
-    .navegacao .menu{
+    .navegacao .menu {
         position: relative;
         flex-flow: row nowrap;
         bottom: auto;
         padding: 0;
         width: fit-content;
         background: transparent;
+    }
+    .navegacao .menu-btn{
+        display: none;
     }
 }
