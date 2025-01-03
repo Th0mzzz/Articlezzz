@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Index from "./pages/home";
 import AboutMe from "./pages/aboutMe";
-import TemplateHeader from "./components/Header";
+import TemplateHeader from "./components/header";
 import TemplatePage from "components/TemplatePage";
 import TemplateFooter from "components/Footer";
 import Post from "components/Post";
