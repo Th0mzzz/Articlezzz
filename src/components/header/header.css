@@ -2,16 +2,23 @@
     position: relative;
     background: var(--cor-fundo);
     height: 112px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 3rem;
+
     position: fixed;
     z-index: 100;
     width: 100%;
     min-width: 100vw;
     padding: 1rem 2.5rem;
     transition: transform .5s, background .4s;
+}
+
+.navegacao .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1440px;
+    column-gap: 3rem;
+    width: 100%;
 }
 
 .link {
@@ -49,7 +56,8 @@
     background: var(--cor-fundo);
     z-index: 100;
     transition: all .5s;
-    &.show{
+
+    &.show {
         bottom: calc(-100% - 112px);
     }
 }
@@ -70,7 +78,8 @@
         width: fit-content;
         background: transparent;
     }
-    .navegacao .menu-btn{
+
+    .navegacao .menu-btn {
         display: none;
     }
 }

@@ -38,12 +38,22 @@
 .btn.scroll-top {
     position: fixed;
     right: 5%;
-    bottom: 5%;
+    bottom: 25vh;
     padding: 1.2rem 1.5rem;
 }
 
 .btn.outline {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
     border: 2px solid var(--cor-principal);
     background: transparent;
-    font-weight: 800;
+    font-weight: 600;
+    color: var(--cor-principal);
+    &:hover{
+        background: var(--cor-secundaria);
+        border-color: var(--cor-secundaria);
+        color: var(--cor-fundo);
+        transform: scale(1.1);
+    }
 }

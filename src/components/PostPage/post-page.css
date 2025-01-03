@@ -1,22 +1,8 @@
 .postModeloContainer {
     color: var(--cor-fonte-post);
     position: relative;
-    margin: 1rem;
-}
-
-.fotoCapa,
-.postModeloContainer .titulo {
-    height: 204px;
-}
-
-.fotoCapa {
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    z-index: -1;
+    margin: auto;
+    max-width: 1440px;
 }
 
 .postModeloContainer .titulo {
@@ -39,14 +25,10 @@
 
 @media (max-width: 744px) {
 
-    .fotoCapa,
-    .postModeloContainer .titulo {
-        height: 104px;
-    }
-
     .postModeloContainer .titulo {
         padding: 0 1rem;
         font-size: 2rem;
+        
     }
 
     .postConteudoContainer {

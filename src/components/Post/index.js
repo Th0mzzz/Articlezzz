@@ -23,7 +23,7 @@ export default function Post() {
                                 {post.texto}
                             </ReactMarkdown>
                         </div>
-                        <h2 className="titulo" style={{ marginBottom: '3rem', fontSize:'3.5rem' }}>Outros posts que você pode gostar...</h2>
+                        <h2 className="subtitulo" style={{ marginBottom: '3rem' }}>Outros posts que você pode gostar...</h2>
                         <div className="other-postsContainer">
                             {posts.filter((p) => p.id !== post.id).map((ps, index) => {
                                 if (index < 4) {

@@ -50,23 +50,25 @@ export default function TemplateHeader() {
     return (
         <header style={{ height: '112px' }}>
             <nav className='navegacao' style={{ transform: tfNav }}>
-                <img src={theme === 'light' ? logo : logoDark} alt='Logo de Th0mzzz' className='logotipo' />
-                <ul className={`menu ${menuShow}`}>
-                    <li>
-                        <NavLink className="link" to='/'>Inicio</NavLink >
-                    </li>
-                    <li>
-                        <NavLink className="link" to='/sobremim'>Sobre mim</NavLink>
-                    </li>
-                    <li onClick={() => { changeTheme(theme === 'light' ? 'dark' : 'light') }}>
-                        <Button type='icon' >
-                            {theme === 'light' ? <FaRegMoon /> : <FaRegSun />}
-                        </Button>
-                    </li>
-                </ul>
-                <button className={`btn icon menu-btn`} onClick={() => { changeMenu() }}>
-                    <HiMenuAlt4 />
-                </button>
+                <div className='container'>
+                    <img src={theme === 'light' ? logo : logoDark} alt='Logo de Th0mzzz' className='logotipo' />
+                    <ul className={`menu ${menuShow}`}>
+                        <li>
+                            <NavLink className="link" to='/'>Inicio</NavLink >
+                        </li>
+                        <li>
+                            <NavLink className="link" to='/sobremim'>Sobre mim</NavLink>
+                        </li>
+                        <li onClick={() => { changeTheme(theme === 'light' ? 'dark' : 'light') }}>
+                            <Button type='icon' >
+                                {theme === 'light' ? <FaRegMoon /> : <FaRegSun />}
+                            </Button>
+                        </li>
+                    </ul>
+                    <button className={`btn icon menu-btn`} onClick={() => { changeMenu() }}>
+                        <HiMenuAlt4 />
+                    </button>
+                </div>
             </nav>
         </header >
     )
